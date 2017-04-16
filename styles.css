@@ -84,6 +84,7 @@ h2 	{
 	position: fixed;
 	top: 0;
 	left: 0;
+	/*i think this is the darkened background layer?*/
 	background-color: rgba(0,0,0,.6);
 	display:none;
 	width: 100%;
@@ -149,6 +150,8 @@ a {
 	text-decoration: none;
 }
 
+/*modal animation slide in from top*/
+
 @-webkit-keyframes animatetop {
     from {top: -300px; opacity: 0.2} 
     to {top: 0.2; opacity: 1}
@@ -159,6 +162,7 @@ a {
     to {top: 0.2; opacity: 1}
 }
 
+/*media queries*/
 
 @media all and (min-width: 768px)  {
 	.content-area {
@@ -224,11 +228,17 @@ a {
 		padding: 10px;
 		margin: 10px auto;
 	}
-	.sidebar-pics {
-		display: flex;
-		flex-direction: column;
+	.sidebar-pics div {
 		width: 100%;
 		margin: 10px auto;
+	}
+	.sassy-pic, .other-sass, .more-sass {
+	background-position: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 400px;
+	border: 1px solid lightgrey;
+	margin-top: 10px auto;
 	}
 
 }

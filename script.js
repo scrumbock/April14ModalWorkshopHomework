@@ -1,3 +1,4 @@
+// script to open the modal on page load after 3 secs
 
 var modal =	document.getElementById("my-modal");
 var openM;
@@ -16,7 +17,8 @@ function openFunc() {
 
 openModal()
 
-// to close on esc key
+// to close modal on esc key
+
 function closeModal(event) {
 	modal.style.display = "none";
 }
@@ -26,6 +28,8 @@ document.addEventListener("keyup", function(e) {
 		closeModal();
 	}
 });
+
+// for mobile, to close with the x 
 
 var mobileModalClose = document.getElementsByClassName("close")[0];
 
